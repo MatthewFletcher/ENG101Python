@@ -13,7 +13,7 @@
 #    Class:  ENG101         	                                          #
 #  Helpers:  None                                                         #
 #                                                                         #
-#  Program:  HW Template                                                  #
+#  Program:  HW8P2                                                        #
 # Due Date:  16 Nov 2017                                                  #
 #                                                                         #
 # Language:  Python 3.5.1                                                 #
@@ -25,4 +25,4 @@
 ###########################################################################
 
 
-#HW 6
+#HW8P2
