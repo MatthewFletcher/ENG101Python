@@ -13,7 +13,7 @@
 #    Class:  ENG101         	                                          #
 #  Helpers:  None                                                         #
 #                                                                         #
-#  Program:  HW6                                                          #
+#  Program:  HW Template                                                  #
 # Due Date:  16 Nov 2017                                                  #
 #                                                                         #
 # Language:  Python 3.5.1                                                 #
@@ -23,3 +23,6 @@
 #   "Bugs":                                                               #
 #   "Undocumented features": None.                                        #
 ###########################################################################
+
+
+#HW 6
