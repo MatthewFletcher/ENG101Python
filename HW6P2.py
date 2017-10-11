@@ -13,7 +13,7 @@
 #    Class:  ENG101         	                                          #
 #  Helpers:  None                                                         #
 #                                                                         #
-#  Program:  HW6                                                          #
+#  Program:  HW6P2                                                        #
 # Due Date:  16 Nov 2017                                                  #
 #                                                                         #
 # Language:  Python 3.5.1                                                 #

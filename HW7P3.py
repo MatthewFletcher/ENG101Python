@@ -20,7 +20,7 @@
 #      IDE:  Python in Terminal                                           #
 #                                                                         #
 # Purpose:                                                                #
-#   "Bugs": "int object is not subscriptable"                             #
+#   "Bugs": Cube sum off by 1 cube                                        #
 #   "Undocumented features": None.                                        #
 ###########################################################################
 
@@ -30,18 +30,29 @@
 
 #Create function to return sum of first n natural numbers
 def sumN(n):
+	#Initialize sum
 	sum = 0
-	for i in (range(n)):
-		sum = sum + sum[i]
-	return(sum)
+	for i in (range(1,n)):
+		sum = sum + i
+	print("The sum of the first %i numbers is %i"%(n,sum))
 
 
+#Create function to return sum of cubes of first n natural numbers
 def sumNcubes(n):
-	sum = 0
-	for i in (range(n)):
-		sum = sum + (sum[i])**3
-	return(sum)
+	#Initialize sum_cubes
+	sum_cubes = 0
+	#Use for loop to add the numbers
+	for i in (range(1,n+1)):
+		sum_cubes = sum_cubes + (i)**3
+	print("The sum of the first %i cubes is %i"%(n,sum_cubes))
 
 
-print("Hello")
-print(sumN(5))
+#Cue input for desired number to check
+n = int(input("Enter a number here >>> "))
+
+
+
+#Call functions with input from user input above
+sumN(n)
+sumNcubes(n)
+
