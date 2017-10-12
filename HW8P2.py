@@ -19,10 +19,42 @@
 # Language:  Python 3.5.1                                                 #
 #      IDE:  Python in Terminal                                           #
 #                                                                         #
-# Purpose:                                                                #
+# Purpose:   Find value of Leibnitz equation for given values             #
 #   "Bugs":                                                               #
 #   "Undocumented features": None.                                        #
 ###########################################################################
 
+############
+# Imports  #
+############
+import math
+
 
 #HW8P2
+
+#Create list with desired numbers of iterations
+iteration_num = [1000,10000,100000,1000000]
+
+#Create empty list for sums
+sum_list = []
+
+#For loop through each value of iteration_num
+for i in range(len(iteration_num)):
+	#Initialize iteration count to 0 for each run through loop
+	k = 0
+	sum_total = 0
+	#print(iteration_num[i])
+	#Calculate leibnitz sum
+	while k < iteration_num[i]:
+		sum = ((-1)**k)/(2*k + 1)
+		sum_total = sum+sum_total
+		k += 1 
+	#Append final sum value for each iteration_num to list
+	sum_list.append(sum)
+
+
+#Print header
+print('Desired value: %f'%(math.pi/4))
+print('Iterations \t Value')
+for i in range(len(iteration_num)):
+	print('%f \t %f'%(iteration_num[i],sum_list[i]))
