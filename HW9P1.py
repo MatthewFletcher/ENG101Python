@@ -34,7 +34,7 @@ from random import randint
 
 #Create a list of play options
 
-t= ['ROCK','PAPER','SCISSOR','LIZARD','SPOCK']
+t= ['ROCK','PAPER','SCISSOR','SPOCK','LIZARD']
 
 #Set computer play to random choice 
 computer =t[randint(0,len(t)-1)]
@@ -42,12 +42,14 @@ computer =t[randint(0,len(t)-1)]
 print("The computer has chosen.")
 
 #Get user choice
-print('What would you like to play?\n1. Rock\n2. Paper \n3. Lizard \n4. Scissor\n5. Spock\n')
+print('What would you like to play?')
+for i in range(len(t)):
+	print('%i.\t%s'%((i+1),t[i]))
 player_choice = int(input('Enter choice number here>>> ' ))
-player_choice = player_choice - 1
+player = player_choice - 1
 
 #Print out user's choice
-print('You chose %s'%t[player_choice])
+print('You chose %s'%t[player])
 
 
 #Figure out who actually won
