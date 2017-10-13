@@ -13,50 +13,26 @@
 #    Class:  ENG101         	                                          #
 #  Helpers:  None                                                         #
 #                                                                         #
-#  Program:  HW10P1                                                       #
+#  Program:  HW10P2                                                       #
 # Due Date:  22 Nov 2017                                                  #
 #                                                                         #
 # Language:  Python 3.5.1                                                 #
 #      IDE:  Python in Terminal                                           #
 #                                                                         #
-# Purpose:   Print the intialism/acronym for a string of words            #
-#   "Bugs":  Does not work for words that start with numbers              #
+# Purpose:   Check if a user input string is a palindrome                 #
+#   "Bugs":                                                               #
 #   "Undocumented features": None.                                        #
 ###########################################################################
 
 
-#HW 10
+#Get user input
+a = input("Enter a string here:>>> ")
 
+#Reverse string into a copy
+b = a[::-1]
 
- #Cue for user input
-print('Enter a series of words')
-user_input = input(">>> ")
-
-#Make user input all caps:
-user_input = user_input.title()
-
-
-#Create list for initials
-initials = []
-
-#Set a boolean "after_space" to true for first letter
-#after_space = 1
-
-#Iterate through words
-for i in range(len(user_input)):
-	if user_input[i].isupper():
-		initials.append(user_input[i])
-
-#Print result
-#TODO make work right
-
-#Create empty string for result of loop
-result = ''
-
-#Loop through each character in the list, and append it to the end
-for i in range(len(initials)):
-	result = result + initials[i]
-
-#Print final result
-print('The acronym for %s is %s'%(user_input,result))
-
+#Check if the 2 strings are equal
+if a == b:
+	print("This is a palindrome")
+else:
+	print("This is not a palindrome")
