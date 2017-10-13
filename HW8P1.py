@@ -47,12 +47,18 @@ height = []
 #Print a header line
 print('Angle \t Max height')
 
+#Create list for max heights
+height_max = []
 
 #For loop through velocity points
 for i in range(len(v)):
+	#Create empty list of heights 
+	height = []
 	#For loop through angles
 	for j in range(len(theta)):
 		height = v[i]**2 * math.sin(theta[j])/(2*g)
-	#height
+	height_max.append(max(height))
 
+
+#TODO make this work, it's not what it is suppposed to be
 
