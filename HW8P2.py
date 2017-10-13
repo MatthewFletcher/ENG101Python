@@ -43,18 +43,21 @@ for i in range(len(iteration_num)):
 	#Initialize iteration count to 0 for each run through loop
 	k = 0
 	sum_total = 0
-	#print(iteration_num[i])
+	sum = 0
+
+	
 	#Calculate leibnitz sum
 	while k < iteration_num[i]:
 		sum = ((-1)**k)/(2*k + 1)
 		sum_total = sum+sum_total
-		k += 1 
+		k = k+1
+		
 	#Append final sum value for each iteration_num to list
-	sum_list.append(sum)
+	sum_list.append(sum_total)
 
 
 #Print header
 print('Desired value: %f'%(math.pi/4))
-print('Iterations \t Value')
+print('Count\tValue')
 for i in range(len(iteration_num)):
-	print('%f \t %f'%(iteration_num[i],sum_list[i]))
+	print('%i\t%f'%(iteration_num[i],sum_list[i]))
