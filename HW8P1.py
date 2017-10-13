@@ -49,10 +49,10 @@ print('Angle \t Max height')
 
 
 #For loop through velocity points
-for i in v:
+for i in range(len(v)):
 	#For loop through angles
-	for j in theta:
-		height = v[i]**2 * math.sin(theta[)/(2*g)
-		print (height)
+	for j in range(len(theta)):
+		height = v[i]**2 * math.sin(theta[j])/(2*g)
+	#height
 
 
