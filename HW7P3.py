@@ -14,7 +14,7 @@
 #  Helpers:  None                                                         #
 #                                                                         #
 #  Program:  HW7P3                                                        #
-# Due Date:  16 Nov 2017                                                  #
+# Due Date:  1 Nov 2017                                                   #
 #                                                                         #
 # Language:  Python 3.5.1                                                 #
 #      IDE:  Python in Terminal                                           #

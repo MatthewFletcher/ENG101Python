@@ -14,7 +14,7 @@
 #  Helpers:  None                                                         #
 #                                                                         #
 #  Program:  HWP2		                                                  #
-# Due Date:  16 Nov 2017                                                  #
+# Due Date:  1 Nov 2017                                                   #
 #                                                                         #
 # Language:  Python 3.5.1                                                 #
 #      IDE:  Python in Terminal                                           #
