@@ -44,21 +44,39 @@ theta = [50,60,70,80,90]
 #Create list for height results for each angle
 height = []
 
-#Print a header line
-print('Angle \t Max height')
-
 #Create list for max heights
 height_max = []
 
-#For loop through velocity points
-for i in range(len(v)):
-	#Create empty list of heights 
-	height = []
-	#For loop through angles
-	for j in range(len(theta)):
-		height = v[i]**2 * math.sin(theta[j])/(2*g)
-	height_max.append(max(height))
-
-
+#Define height function
+def get_height(vel,ang):
+	height = vel**2 * math.sin(ang)/(2*g)
+	return round(height,2)
 #TODO make this work, it's not what it is suppposed to be
+
+#Print result as a table
+###############
+#Print top row#
+###############
+#Print cell 0,0
+print('V\Theta', end = '\t')
+
+#Print rest of first row (angle values)
+for i in theta:
+	print(i,end = '\t')
+#Go to new line
+#Loop through
+
+#Set row counter
+row = 1
+#Define printing of rows
+def rowPrint():
+	print('\n')
+	#Print 
+	print(v[row],end = '\t')
+	for ang in theta: 
+		print(get_height(v[row],ang), end = '\t')
+#Execute function
+rowPrint()
+
+print('\n')
 
