@@ -48,8 +48,6 @@ for i in range(len(user_input)):
 		initials.append(user_input[i])
 
 #Print result
-#TODO make work right
-
 #Create empty string for result of loop
 result = ''
 
