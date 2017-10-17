@@ -23,13 +23,12 @@
 #   "Bugs":                                                               #
 #   "Undocumented features": None.                                        #
 ###########################################################################
-
-
-############
-# Imports  #
-############
-
+###########
+# Imports #
+###########
 import math
+
+
 
 
 #Set acceleration due to gravity
@@ -51,32 +50,41 @@ height_max = []
 def get_height(vel,ang):
 	height = vel**2 * math.sin(ang)/(2*g)
 	return round(height,2)
-#TODO make this work, it's not what it is suppposed to be
 
+
+##########################################
 #Print result as a table
-###############
-#Print top row#
-###############
+
+def newLine():
+	print('\n')
+
+#Printing top row
 #Print cell 0,0
 print('V\Theta', end = '\t')
 
 #Print rest of first row (angle values)
 for i in theta:
 	print(i,end = '\t')
-#Go to new line
-#Loop through
 
-#Set row counter
-row = 1
+
+##########################################
+#Printing rest of rows#
+#Loop through rest of rows
+
 #Define printing of rows
 def rowPrint():
 	print('\n')
-	#Print 
+	#Print  data in row
 	print(v[row],end = '\t')
 	for ang in theta: 
 		print(get_height(v[row],ang), end = '\t')
+
 #Execute function
-rowPrint()
 
-print('\n')
+#Loop through rest of rows
+for row in range(len(v)-1):
+	row = row + 1
+	rowPrint()
 
+#Print new line for my sanity
+newLine()
