@@ -14,7 +14,7 @@
 #  Helpers:  None                                                         #
 #                                                                         #
 #  Program:  HW10P1                                                       #
-# Due Date:  22 Nov 2017                                                  #
+# Due Date:  15 Nov 2017                                                  #
 #                                                                         #
 # Language:  Python 3.5.1                                                 #
 #      IDE:  Python in Terminal                                           #
