@@ -29,7 +29,7 @@
 ############
 import math
 import time
-'''
+
 #HW8P2
 
 #Create list with desired numbers of iterations
@@ -62,11 +62,12 @@ print('Count\tValue')
 for i in range(len(iteration_num)):
 	print('%i\t%f'%(iteration_num[i],sum_list[i]))
 
-'''
+
 
 
 ######
 #Part 2, finding required number of iterations to be within 10^-6 of required  value
+
 
 #Clear sum value
 sum = 0
