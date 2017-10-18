@@ -28,8 +28,8 @@
 # Imports  #
 ############
 import math
-
-
+import time
+'''
 #HW8P2
 
 #Create list with desired numbers of iterations
@@ -61,3 +61,43 @@ print('Desired value: %f'%(math.pi/4))
 print('Count\tValue')
 for i in range(len(iteration_num)):
 	print('%i\t%f'%(iteration_num[i],sum_list[i]))
+
+'''
+
+
+######
+#Part 2, finding required number of iterations to be within 10^-6 of required  value
+
+#Clear sum value
+sum = 0
+
+#Set iteration count to zero
+iteration_count = 0
+
+#Desired value
+desired_value = math.pi/4
+
+#Current value
+current_value = 0
+
+#Acceptable error
+error_ok = 10**(-6)
+
+#While loop
+while math.fabs(current_value - desired_value) > error_ok:
+	#Delay a half second between iterations for debugging
+
+	#TODO remove this for final product
+	#time.sleep(0.5)
+	sum = (-1)**iteration_count/(2*iteration_count+1)+sum
+
+
+	#Set current value equal to the sum
+	current_value = sum
+
+	iteration_count = iteration_count + 1
+	#Print for debugging
+	#print(iteration_count,current_value)
+
+#Print final result 
+print('It takes %i iterations to get within the desired value of pi/4.'%(iteration_count))
