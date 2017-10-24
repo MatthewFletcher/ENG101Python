@@ -1,0 +1,9 @@
+if __name__ == "__main__":
+	main()
+
+
+This imports the function in the program into memory 
+
+#To use modules in other pieces of code 
+import programname as abbreviatedprogramname
+abbreviatedprogramname.functioninprogram(argument)
