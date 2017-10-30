@@ -29,6 +29,17 @@
 #########
 
 import math
+#initialize a to 2
+a = 2
 
+long(x)
+#initialize x to a/2
+x =a/2
 
-#TODO actually get this stuff done
+i = 1
+
+while i <= 6:
+	x = (x+a/x)/2
+	print('On iteration %i, x = %f'%(i,x))
+	i += 1
+
